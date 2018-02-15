@@ -61,3 +61,11 @@ body {
     left: 0;
     z-index: 1;
 }
+
+.nav-link {
+    color: gray;
+}
+
+.nav-link:hover {
+    color: black;
+}

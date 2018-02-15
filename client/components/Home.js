@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { ScrollPage, Section } from 'react-scrollpage';
 
 import Hollywood from '../static/Hollywood_copy.jpg'
 import KingsRoadCam from '../static/KingsRoadCam.jpg'
@@ -12,14 +13,22 @@ class Home extends Component {
 	}
 
 	render(){
-		let imageStyle = {height: "100vh", width: "100vw"}
+		const imageStyle = {height: "100vh", width: "100vw"}
+			const options = {
+				curPage: 1,        
+				totalPage: 5,         
+				delay: 1200           
+			}
+
 		return(
 			<div id="HomeDiv">
-				<img src={KingsRoadHome1} style={imageStyle}/>
-				<img src={KingsRoadHome2} style={imageStyle}/>
-				<img src={Hollywood} style={imageStyle}/>
-				<img src={KingsRoadUnit} style={imageStyle}/>
-				<img src={KingsRoadCam} style={imageStyle}/>
+			<ScrollPage {...options}>
+				<Section><img src={KingsRoadHome1} style={imageStyle}/></Section>
+				<Section><img src={KingsRoadHome2} style={imageStyle}/></Section>
+				<Section><img src={Hollywood} style={imageStyle}/></Section>
+				<Section><img src={KingsRoadUnit} style={imageStyle}/></Section>
+				<Section><img src={KingsRoadCam} style={imageStyle}/></Section>
+				</ScrollPage>
 			</div>
 		)
 	}

@@ -9,9 +9,9 @@ class NavBar extends Component {
 
 	render(){
 		return(
-			<nav className="navbar navbar-toggleable-md navbar-dark">
+			<nav className="navbar navbar-toggleable-md navbar-dark" style={{marginTop: "3em", zIndex: 2}}>
 				<div className="container-fluid">
-					<a className="navbar-brand" style={{textAlign: "left", marginLeft: "1em"}}><img src={Logo} style={{height: "3em", width: "10em"}}/></a>
+					<a className="navbar-brand" style={{textAlign: "left", marginLeft: "1em"}}><img src={Logo} style={{height: "3em", width: "10em", opacity: "1"}}/></a>
 					<div className="collapse navbar-collapse" id="navbarNav">
 					  <ul className="navbar-nav">
 					    <li className="nav-item active">

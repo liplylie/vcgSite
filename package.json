@@ -1,0 +1,38 @@
+{
+  "name": "vcgsite",
+  "version": "1.0.0",
+  "description": "code challenge for vcg",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "start-nodemon": "nodemon server/server.js",
+    "compile-watch": "webpack --watch",
+    "all": "npm run start-nodemon & npm run compile-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liplylie/vcgSite.git"
+  },
+  "author": "Jordan Daniels",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liplylie/vcgSite/issues"
+  },
+  "homepage": "https://github.com/liplylie/vcgSite#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "express": "^4.16.2",
+    "file-loader": "^1.1.6",
+    "nodemon": "^1.14.12",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}

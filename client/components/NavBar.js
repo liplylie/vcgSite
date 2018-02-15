@@ -11,9 +11,6 @@ class NavBar extends Component {
 		return(
 			<nav className="navbar navbar-toggleable-md navbar-dark">
 				<div className="container-fluid">
-					<button className="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					  <span className="navbar-toggler-icon "></span>
-					</button>
 					<a className="navbar-brand" style={{textAlign: "left", marginLeft: "1em"}}><img src={Logo} style={{height: "3em", width: "10em"}}/></a>
 					<div className="collapse navbar-collapse" id="navbarNav">
 					  <ul className="navbar-nav">

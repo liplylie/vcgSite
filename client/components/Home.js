@@ -14,7 +14,7 @@ class Home extends Component {
 	render(){
 		let imageStyle = {height: "100vh", width: "100vw"}
 		return(
-			<div>
+			<div id="HomeDiv">
 				<img src={KingsRoadHome1} style={imageStyle}/>
 				<img src={KingsRoadHome2} style={imageStyle}/>
 				<img src={Hollywood} style={imageStyle}/>

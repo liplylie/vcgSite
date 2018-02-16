@@ -8,7 +8,8 @@
     "start-nodemon": "nodemon server/server.js",
     "compile-watch": "webpack --watch",
     "all": "npm run start-nodemon & npm run compile-watch",
-    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+    "post": "node server/server & webpack -d",
+    "postinstall": "npm run post"
   },
   "repository": {
     "type": "git",

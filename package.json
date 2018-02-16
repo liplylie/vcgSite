@@ -1,6 +1,7 @@
 {
   "name": "vcgsite",
   "version": "1.0.0",
+  "engine": "9.2.1",
   "description": "code challenge for vcg",
   "main": "server/server.js",
   "scripts": {
